@@ -1,5 +1,6 @@
 @mixin background-pic($img, $type) {
-  background-image: url('..img/#{$img}.#{$type}');
+  background-image: url('../img/#{$img}.#{$type}');
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
 }

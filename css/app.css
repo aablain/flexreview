@@ -7,13 +7,24 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 650px;
-  background-color: orange; }
+  background-image: url("../img/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  @media (max-width: 710px) {
+    .top {
+      flex-basis: 500px;
+      justify-content: space-around; }
+      .top .nav span {
+        font-size: 2em; } }
   .top .nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around; }
+    .top .nav span {
+      color: #fff; }
     .top .nav ul {
       list-style: none;
       padding-left: 0;
@@ -21,11 +32,22 @@
       flex-direction: row; }
       .top .nav ul li {
         padding: 0px 20px; }
+  @media (max-width: 600px) {
+    .top .nav ul {
+      flex-basis: 500px; }
+      .top .nav ul li {
+        padding: 0px 0px;
+        margin: 0px auto; } }
   .top .maininfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .top .maininfo span {
+      color: #fff; }
+    .top .maininfo h1 {
+      font-size: 4em;
+      margin: 0px 0px; }
 
 .bottom {
   display: flex;
@@ -37,24 +59,75 @@
     @media (min-width: 1115px) {
       .bottom .topboxes .boxes, .bottom .bottomboxes .boxes {
         height: 350px; }
+        .bottom .topboxes .boxes .centerofbox .display, .bottom .bottomboxes .boxes .centerofbox .display {
+          height: 84px;
+          width: 84px; }
         .bottom .topboxes .boxes .boxtitle, .bottom .bottomboxes .boxes .boxtitle {
           left: 40px;
           bottom: 40px; } }
   .bottom .boxes {
     height: 250px;
-    border: 1px dotted black;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bottom .boxes .centerofbox .display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      background-color: rgba(0, 0, 0, 0.5); }
     .bottom .boxes .boxtitle {
       position: absolute;
       left: 20px;
-      bottom: 20px; }
+      bottom: 20px;
+      color: #fff; }
   .bottom .small {
     flex-grow: 1;
-    flex-basis: 200px;
-    background-color: red; }
+    flex-basis: 200px; }
   .bottom .large {
     flex-grow: 2;
-    background-color: yellow;
     flex-basis: 400px; }
+
+.display span {
+  color: #fff; }
+
+.one {
+  background-image: url("../img/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.two {
+  background-image: url("../img/hike.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.three {
+  background-image: url("../img/temple2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.four {
+  background-image: url("../img/tower.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.five {
+  background-image: url("../img/annapurna.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+
+.six {
+  background-image: url("../img/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
 
 /*# sourceMappingURL=app.css.map */

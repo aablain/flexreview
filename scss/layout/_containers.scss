@@ -8,13 +8,25 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 650px;
-  background-color: orange;
+  @include background-pic(mountain, jpg);
+  @media (max-width: 710px) {
+    flex-basis: 500px;
+    justify-content: space-around;
+    .nav {
+      span {
+        font-size: 2em;
+      }
+    }
+  }
   .nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    span {
+      color: #fff;
+    }
     ul {
       list-style: none;
       padding-left: 0;
@@ -25,11 +37,29 @@
       }
     }
   }
+  @media (max-width: 600px) {
+    .nav {
+      ul {
+        flex-basis: 500px;
+        li {
+          padding: 0px 0px;
+          margin: 0px auto;
+        }
+      }
+    }
+  }
   .maininfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    span {
+      color: #fff;
+    }
+    h1 {
+      font-size: 4em;
+      margin: 0px 0px;
+    }
   }
   .more {
 
@@ -45,7 +75,13 @@
     flex-wrap: wrap;
     @media (min-width: 1115px) {
       .boxes {
-        height: 350px;
+        height: $boxes-height * 1.4;
+        .centerofbox {
+          .display {
+            height: $box-dims * 1.4;
+            width: $box-dims * 1.4;
+          }
+        }
         .boxtitle {
           left: $boxtitle-space * 2;
           bottom: $boxtitle-space * 2;
@@ -54,23 +90,61 @@
     }
   }
   .boxes {
-    height: 250px;
-    border: 1px dotted black;
+    height: $boxes-height;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .centerofbox {
+      .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: $box-dims;
+        width: $box-dims;
+        background-color: rgba(0, 0, 0, 0.5);
+
+      }
+    }
     .boxtitle {
       position: absolute;
       left: $boxtitle-space;
       bottom: $boxtitle-space;
+      color: #fff;
     }
   }
   .small {
     flex-grow: 1;
     flex-basis: 200px;
-    background-color: red;
   }
   .large {
     flex-grow: 2;
-    background-color: yellow;
     flex-basis: 400px;
   }
+}
+
+.display {
+  span {
+    color: #fff;
+  }
+}
+
+.one {
+  @include background-pic(bridge, jpg);
+}
+.two {
+  @include background-pic(hike, jpg);
+}
+.three {
+  @include background-pic(temple2, jpg);
+}
+.four{
+  @include background-pic(tower, jpg);
+}
+.five{
+  @include background-pic(annapurna, jpg);
+}
+.six {
+  @include background-pic(house, jpg);
 }
