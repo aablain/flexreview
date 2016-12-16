@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column; }
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 650px;
+  background-color: orange; }
+  .top .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
+    .top .nav ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: row; }
+      .top .nav ul li {
+        padding: 0px 20px; }
+  .top .maininfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.bottom {
+  display: flex;
+  flex-direction: column; }
+  .bottom .topboxes, .bottom .bottomboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    @media (min-width: 1115px) {
+      .bottom .topboxes .boxes, .bottom .bottomboxes .boxes {
+        height: 350px; }
+        .bottom .topboxes .boxes .boxtitle, .bottom .bottomboxes .boxes .boxtitle {
+          left: 40px;
+          bottom: 40px; } }
+  .bottom .boxes {
+    height: 250px;
+    border: 1px dotted black;
+    position: relative; }
+    .bottom .boxes .boxtitle {
+      position: absolute;
+      left: 20px;
+      bottom: 20px; }
+  .bottom .small {
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: red; }
+  .bottom .large {
+    flex-grow: 2;
+    background-color: yellow;
+    flex-basis: 400px; }
+
+/*# sourceMappingURL=app.css.map */

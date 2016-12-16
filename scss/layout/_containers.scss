@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 650px;
+  background-color: orange;
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 0px 20px;
+      }
+    }
+  }
+  .maininfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .more {
+
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  .topboxes, .bottomboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (min-width: 1115px) {
+      .boxes {
+        height: 350px;
+        .boxtitle {
+          left: $boxtitle-space * 2;
+          bottom: $boxtitle-space * 2;
+        }
+      }
+    }
+  }
+  .boxes {
+    height: 250px;
+    border: 1px dotted black;
+    position: relative;
+    .boxtitle {
+      position: absolute;
+      left: $boxtitle-space;
+      bottom: $boxtitle-space;
+    }
+  }
+  .small {
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: red;
+  }
+  .large {
+    flex-grow: 2;
+    background-color: yellow;
+    flex-basis: 400px;
+  }
+}
