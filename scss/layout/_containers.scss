@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .top {
@@ -57,7 +58,8 @@
       color: #fff;
     }
     h1 {
-      font-size: 4em;
+      font-family: 'Mirza', cursive;
+      font-size: 5.7em;
       margin: 0px 0px;
     }
   }
@@ -112,6 +114,11 @@
       left: $boxtitle-space;
       bottom: $boxtitle-space;
       color: #fff;
+      transition: all 1s ease-in-out;
+      span {
+        border-top: 0px solid $light-grey;
+        border-bottom: 0px solid $light-grey;
+      }
     }
   }
   .small {
@@ -147,4 +154,29 @@
 }
 .six {
   @include background-pic(house, jpg);
+}
+
+.one:hover {
+  @include background-pics(bridge, jpg);
+  @include change;
+}
+.two:hover {
+  @include background-pics(hike, jpg);
+  @include change;
+}
+.three:hover {
+  @include background-pics(temple2, jpg);
+  @include change;
+}
+.four:hover {
+  @include background-pics(tower, jpg);
+  @include change;
+}
+.five:hover {
+  @include background-pics(annapurna, jpg);
+  @include change;
+}
+.six:hover {
+  @include background-pics(house, jpg);
+  @include change;
 }

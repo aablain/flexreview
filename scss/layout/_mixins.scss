@@ -4,3 +4,24 @@
   background-position: center top;
   background-size: cover;
 }
+
+@mixin background-pics($img, $type) {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/#{$img}.#{$type}');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+@mixin change {
+  .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid $light-grey;
+      border-bottom: 2px solid $light-grey;
+    }
+  }
+}

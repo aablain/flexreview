@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: 'Aref Ruqaa', serif; }
 
 .top {
   display: flex;
@@ -46,7 +47,8 @@
     .top .maininfo span {
       color: #fff; }
     .top .maininfo h1 {
-      font-size: 4em;
+      font-family: 'Mirza', cursive;
+      font-size: 5.7em;
       margin: 0px 0px; }
 
 .bottom {
@@ -83,7 +85,11 @@
       position: absolute;
       left: 20px;
       bottom: 20px;
-      color: #fff; }
+      color: #fff;
+      transition: all 1s ease-in-out; }
+      .bottom .boxes .boxtitle span {
+        border-top: 0px solid #909497;
+        border-bottom: 0px solid #909497; }
   .bottom .small {
     flex-grow: 1;
     flex-basis: 200px; }
@@ -129,5 +135,95 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
+
+.one:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .one:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .one:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
+
+.two:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hike.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .two:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .two:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
+
+.three:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/temple2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .three:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .three:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
+
+.four:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tower.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .four:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .four:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
+
+.five:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/annapurna.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .five:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .five:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
+
+.six:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .six:hover .boxtitle {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    .six:hover .boxtitle span {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+      border-top: 2px solid #909497;
+      border-bottom: 2px solid #909497; }
 
 /*# sourceMappingURL=app.css.map */
