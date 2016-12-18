@@ -46,9 +46,20 @@
     .nav {
       ul {
         flex-basis: 500px;
+        justify-content: space-around;
         li {
           padding: 0px 0px;
-          margin: 0px auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 455px) {
+    .nav {
+      ul {
+        flex-wrap: wrap;
+        li {
+          flex-basis: 110px;
+          padding: 0px 0px;
         }
       }
     }
