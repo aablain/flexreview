@@ -1,3 +1,10 @@
+@-webkit-keyframes glow {
+  20% {
+    box-shadow: 0px 0px 0px #fff; }
+  50% {
+    box-shadow: 0px 0px 40px #fff; }
+  80% {
+    box-shadow: 0px 0px 0px #fff; } }
 .container {
   display: flex;
   flex-direction: column;
@@ -33,6 +40,9 @@
       flex-direction: row; }
       .top .nav ul li {
         padding: 0px 20px; }
+        .top .nav ul li:hover {
+          color: #fff;
+          font-weight: bold; }
   @media (max-width: 600px) {
     .top .nav ul {
       flex-basis: 500px; }
@@ -65,8 +75,9 @@
           height: 84px;
           width: 84px; }
         .bottom .topboxes .boxes .boxtitle, .bottom .bottomboxes .boxes .boxtitle {
-          left: 40px;
-          bottom: 40px; } }
+          bottom: 40px; }
+          .bottom .topboxes .boxes .boxtitle span, .bottom .bottomboxes .boxes .boxtitle span {
+            padding-left: 40px; } }
   .bottom .boxes {
     height: 250px;
     position: relative;
@@ -83,13 +94,16 @@
       background-color: rgba(0, 0, 0, 0.5); }
     .bottom .boxes .boxtitle {
       position: absolute;
-      left: 20px;
+      left: 0;
       bottom: 20px;
       color: #fff;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      width: 100%; }
       .bottom .boxes .boxtitle span {
+        padding-left: 20px;
         border-top: 0px solid #909497;
-        border-bottom: 0px solid #909497; }
+        border-bottom: 0px solid #909497;
+        transition: all 0.2s ease-in-out; }
   .bottom .small {
     flex-grow: 1;
     flex-basis: 200px; }
@@ -142,14 +156,16 @@
   background-position: center top;
   background-size: cover; }
   .one:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .one:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .one:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 .two:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hike.jpg");
@@ -157,14 +173,16 @@
   background-position: center top;
   background-size: cover; }
   .two:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .two:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .two:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 .three:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/temple2.jpg");
@@ -172,14 +190,16 @@
   background-position: center top;
   background-size: cover; }
   .three:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .three:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .three:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 .four:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tower.jpg");
@@ -187,14 +207,16 @@
   background-position: center top;
   background-size: cover; }
   .four:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .four:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .four:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 .five:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/annapurna.jpg");
@@ -202,14 +224,16 @@
   background-position: center top;
   background-size: cover; }
   .five:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .five:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .five:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 .six:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/house.jpg");
@@ -217,13 +241,15 @@
   background-position: center top;
   background-size: cover; }
   .six:hover .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center; }
     .six:hover .boxtitle span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid #909497;
       border-bottom: 2px solid #909497; }
+  .six:hover .centerofbox .display {
+    animation: glow 2s infinite ease-in-out; }
 
 /*# sourceMappingURL=app.css.map */

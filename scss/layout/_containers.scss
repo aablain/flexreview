@@ -35,6 +35,10 @@
       flex-direction: row;
       li {
         padding: 0px 20px;
+        &:hover {
+          color: #fff;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -85,8 +89,10 @@
           }
         }
         .boxtitle {
-          left: $boxtitle-space * 2;
           bottom: $boxtitle-space * 2;
+          span {
+              padding-left: $boxtitle-space * 2;
+          }
         }
       }
     }
@@ -111,13 +117,16 @@
     }
     .boxtitle {
       position: absolute;
-      left: $boxtitle-space;
+      left: 0;
       bottom: $boxtitle-space;
       color: #fff;
       transition: all 1s ease-in-out;
+      width: 100%;
       span {
+        padding-left: $boxtitle-space;
         border-top: 0px solid $light-grey;
         border-bottom: 0px solid $light-grey;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
@@ -159,24 +168,30 @@
 .one:hover {
   @include background-pics(bridge, jpg);
   @include change;
+  @include glowing;
 }
 .two:hover {
   @include background-pics(hike, jpg);
   @include change;
+  @include glowing;
 }
 .three:hover {
   @include background-pics(temple2, jpg);
   @include change;
+  @include glowing;
 }
 .four:hover {
   @include background-pics(tower, jpg);
   @include change;
+  @include glowing;
 }
 .five:hover {
   @include background-pics(annapurna, jpg);
   @include change;
+  @include glowing;
 }
 .six:hover {
   @include background-pics(house, jpg);
   @include change;
+  @include glowing;
 }

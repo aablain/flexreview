@@ -14,14 +14,22 @@
 
 @mixin change {
   .boxtitle {
-    width: 100%;
     left: 0;
     text-align: center;
     span {
       font-size: 1.4em;
       padding-bottom: 3px;
+      padding-left: 0;
       border-top: 2px solid $light-grey;
       border-bottom: 2px solid $light-grey;
+    }
+  }
+}
+
+@mixin glowing {
+  .centerofbox {
+    .display {
+        animation: glow 2s infinite ease-in-out;
     }
   }
 }
